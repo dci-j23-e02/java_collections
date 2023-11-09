@@ -1,14 +1,33 @@
 package sets_collection;
 
 public class Book implements  Comparable<Book> {
-    String  title;
-    double price;
+    private String  title;
+    private double price;
 
   public Book(String title, double price) {
     this.title = title;
     this.price = price;
   }
 
+  public String getTitle() {
+    return title;
+  }
+
+  public void setTitle(String title) {
+    this.title = title;
+  }
+
+  public double getPrice() {
+    return price;
+  }
+
+  public void setPrice(double newPrice) {
+    if(newPrice >= 0 ){
+      this.price = newPrice;
+    }else{
+      this.price = this.price;
+    }
+  }
 
   @Override
   public String toString() {
