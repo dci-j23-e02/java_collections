@@ -29,9 +29,9 @@ public class HashSetDemo {
    // bookSet.add(b1);
     bookSet.add(b2);
     bookSet.add(b3);
-    bookSet.add(null);
+    bookSet.add(b1);
 
-    System.out.println(bookSet.contains(b1));
+    System.out.println(bookSet);
 
     // System.out.println(bookSet);
 
